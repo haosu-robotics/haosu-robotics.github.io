@@ -6,37 +6,42 @@ body {
 	color: #818181;
 }
 
+/*logo栏的高低，宽度属性*/
 header {
    /*position:relative;*/
    left: 0;
    top: 0;
    width: 100%;
-   height: 130px;
+   height: 110px;
    background-color: #F8F8F4; /*left: 0; top: 0; width: 100%; height: 140px; background-color: #F8F8F4;*/
 }
-
+/*logo栏的高低，宽度属性*/
   .view1, .view2{
 	width: 1000px;
-	height: 140px;
+	height: 130px;
 	margin:0 auto;
-  }
+  } /*width: 1000px; height: 130px; margin:0 auto;*/
 
 a {text-decoration: none;}
 
-.view1 a {width:280px; float: left; border-right: #BBB7B7 2px solid; line-height: inherit; margin-top: 20px;} /*width:280px; float: left; border-right: #BBB7B7 2px solid; line-height: inherit; margin-top: 20px;*/
-.view1 #labname {float: left; margin: 10px; margin-top: 35px; width: 450px;} /*float: left; margin: 20px; margin-top: 50px; width: 600px;*/
-#labname {font-family: "open sans", "Franklin Gothic Bold", Haettenschweiler, "Arial Black", "sans-serif", Impact; font-size: 30px; color: #BBB7B7;}
+/*logo和文字之间竖线的属性*/
+.view1 a {width:260px; float: left; border-right: #BBB7B7 2px solid; line-height: inherit; margin-top: 20px;} /*width:280px; float: left; border-right: #BBB7B7 2px solid; line-height: inherit; margin-top: 20px;*/
+
+/*文字的属性*/
+.view1 #labname {float: left; margin: 10px; margin-top: 30px; width: 450px;} /*float: left; margin: 20px; margin-top: 50px; width: 600px;*/
+#labname {font-family: "open sans", "Franklin Gothic Bold", Haettenschweiler, "Arial Black", "sans-serif", Impact; font-size: 32px; color: #BBB7B7;}
 /*font-size: 30px; color: #BBB7B7; margin: 10px 0; margin-bottom: 20px;*/
 
+/*logo的属性*/
   #logo {
-	 width:247px;
-	 height:70px;
+	 width:252px;
+	 height:60px;
 	  padding-top: 00px;  /* width:247px; height:80px; padding-top: 20px;*/
 	
   }
   
 
-
+/*nav栏的属性*/
 nav {
 	height: 40px; /*height: 40px;*/
 	background-color: #A2CFC9;
@@ -46,9 +51,9 @@ nav {
 	  width:1000px; 
 	  height: 10px;
 	  margin: auto;
-	  
-   }
+   }/*box-sizing: border-box; width:1000px; height: 10px; margin: auto;*/
 
+/*nav栏文字的属性*/
 	.navitems a {font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif"; color: #FFFFFF; margin-right: 40px; font-size: 13px; line-height: 40px; padding-bottom: 8px;}
 	.navitems a:hover {color: #BBB7B7; border-bottom: #BBB7B7 solid 3px;}
 
