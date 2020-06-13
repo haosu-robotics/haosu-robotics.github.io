@@ -11,8 +11,8 @@ header {
    left: 0;
    top: 0;
    width: 100%;
-   height: 140px;
-   background-color: #F8F8F4;
+   height: 130px;
+   background-color: #F8F8F4; /*left: 0; top: 0; width: 100%; height: 140px; background-color: #F8F8F4;*/
 }
 
   .view1, .view2{
@@ -23,21 +23,22 @@ header {
 
 a {text-decoration: none;}
 
-.view1 a {width:280px; float: left; border-right: #BBB7B7 2px solid; line-height: inherit; margin-top: 20px;}
-.view1 #labname {float: left; margin: 20px; margin-top: 50px; width: 600px;}
+.view1 a {width:280px; float: left; border-right: #BBB7B7 2px solid; line-height: inherit; margin-top: 20px;} /*width:280px; float: left; border-right: #BBB7B7 2px solid; line-height: inherit; margin-top: 20px;*/
+.view1 #labname {float: left; margin: 10px; margin-top: 35px; width: 450px;} /*float: left; margin: 20px; margin-top: 50px; width: 600px;*/
 
 
   #logo {
 	 width:247px;
-	 height:80px;
-	  padding-top: 20px;
+	 height:70px;
+	  padding-top: 00px;  /* width:247px; height:80px; padding-top: 20px;*/
 	
   }
   
-#labname {font-family: "open sans", "Franklin Gothic Bold", Haettenschweiler, "Arial Black", "sans-serif", Impact; font-size: 30px; color: #BBB7B7; margin: 10px 0; margin-bottom: 20px;}
+#labname {font-family: "open sans", "Franklin Gothic Bold", Haettenschweiler, "Arial Black", "sans-serif", Impact; font-size: 30px; color: #BBB7B7; margin: 10px 0; margin-bottom: 00px;}
+/*font-size: 30px; color: #BBB7B7; margin: 10px 0; margin-bottom: 20px;*/
 
 nav {
-	height: 40px;
+	height: 40px; /*height: 40px;*/
 	background-color: #A2CFC9;
 }
   .navitems {
