@@ -266,6 +266,12 @@ p.section-header {
   font-size: 30px;
 }
 
+a.section-header {
+  color:black; 
+  font-family: 'Open Sans', sans-serif; 
+  font-size: 30px;
+}
+
 p.speaker-title {
   color:black; 
   font-family: 'Open Sans', sans-serif; 
@@ -278,6 +284,24 @@ p.speaker-description {
   font-family: 'Open Sans', sans-serif; 
   font-size: 15px; 
   line-height: 20px;
+}
+
+p.schedule-text {
+  color:black;
+  font-family: 'Open Sans', sans-serif; 
+  font-size: 20px;
+}
+
+span.schedule-time {
+  color:black;
+  font-family: 'Open Sans', sans-serif; 
+  font-size: 20px;
+}
+
+span.schedule-event {
+  color:rgb(0, 174, 255);
+  font-family: 'Open Sans', sans-serif; 
+  font-size: 20px;
 }
 
 div#aside{
@@ -297,4 +321,19 @@ img.speaker-photo {
   width: 135px;
   height: auto;
   vertical-align:middle
+}
+
+img.organizer-photo {
+  width: 115px;
+  height: 139px;
+}
+
+table.organizer {
+  text-align: center;
+  width: 100%
+}
+
+tr.blank_row {
+    height: 10px !important; /* overwrites any other rules */
+    background-color: #FFFFFF;
 }
