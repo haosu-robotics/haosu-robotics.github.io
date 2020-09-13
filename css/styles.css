@@ -259,3 +259,42 @@ footer {
   display: block;
 }
 
+/* Added by Junxi */
+p.section-header {
+  color:black; 
+  font-family: 'Open Sans', sans-serif; 
+  font-size: 30px;
+}
+
+p.speaker-title {
+  color:black; 
+  font-family: 'Open Sans', sans-serif; 
+  font-size: 20px; 
+  line-height: 25px;
+}
+
+p.speaker-description {
+  color:black; 
+  font-family: 'Open Sans', sans-serif; 
+  font-size: 15px; 
+  line-height: 20px;
+}
+
+div#aside{
+  width:200px;
+  height:200px;
+  /*background-color:yellow;*/
+  float:left;
+  }
+
+div#main1{
+  /*background-color:aqua;*/
+  margin-left:200px;
+  height:auto;
+}
+
+img.speaker-photo {
+  width: 135px;
+  height: auto;
+  vertical-align:middle
+}
