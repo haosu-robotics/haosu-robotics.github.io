@@ -337,3 +337,10 @@ tr.blank_row {
     height: 10px !important; /* overwrites any other rules */
     background-color: #FFFFFF;
 }
+
+li.topics {
+  color:black; 
+  font-family: 'Open Sans', sans-serif; 
+  font-size: 20px;
+  line-height: normal;
+}
