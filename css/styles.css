@@ -304,6 +304,19 @@ span.schedule-event {
   font-size: 20px;
 }
 
+p.normal-text {
+  color:black;
+  font-family: 'Open Sans', sans-serif; 
+  font-size: 20px;
+}
+
+p.normal-bold-text {
+  color:black;
+  font-family: 'Open Sans', sans-serif; 
+  font-size: 20px;
+  font-weight: bold;
+}
+
 div#aside{
   width:200px;
   height:200px;
