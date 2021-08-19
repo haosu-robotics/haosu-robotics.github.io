@@ -357,3 +357,8 @@ li.topics {
   font-size: 20px;
   line-height: normal;
 }
+
+td#test {
+  text-align: center;
+  color: red;
+}
