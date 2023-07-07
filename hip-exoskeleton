@@ -1,0 +1,176 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <link rel="shortcut icon" type="image/png" href="https://logoforbrowser.png">
+  <meta charset="utf-8">
+
+  <title>Biomechatronics and Intelligent Robotics</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    .slider {
+      width: 100%;
+      height: 300px;
+      overflow: hidden;
+    }
+
+    .slider img {
+      width: 100%;
+      height: auto;
+      display: none;
+    }
+
+    .slider img.active {
+      display: block;
+    }
+  </style>
+  <!-- JavaScript for the image slider -->
+  <script>
+    window.onload = function () {
+      var slides = document.querySelectorAll('.slider img');
+      var currentSlide = 0;
+      slides[currentSlide].classList.add('active');
+
+      setInterval(function () {
+        slides[currentSlide].classList.remove('active');
+        currentSlide = (currentSlide+1)%slides.length;
+        slides[currentSlide].classList.add('active');
+      }, 2000); // Change image every 2 seconds
+    };
+  </script>
+</head>
+
+<body>
+	
+<header>
+  <div class="view1">
+	<a href="index.html">
+		<img id="logo" src="img/Logo_Simple.png" alt="">  
+	</a>
+		<div id="labname">          
+      Biomechatronics and Intelligent Robotics Lab        
+		</div> 
+    
+  </div>
+</header>
+
+<nav>
+	<div class="navitems">
+          <span><a href="index.html" >Home</a></span> 
+          <span><a href="research.html"><b>Research</b></a></span> 
+          <span><a href="people.html">People</a></span> 
+          <span><a href="publications.html">Publications</a></span> 
+          <span><a href="news.html">News</a></span>
+          <span><a href="joining.html">Opportunity</a></span>
+          <span><a href="https://assistiverobotcenter.github.io">Assistive Robot Center</a></span>
+          <div class="dropdown">
+            <a href="#" class="dropbtn">Workshop</a>
+            <div class="dropdown-content">
+                <a href="2021iros-workshop.html">IROS 2021</a>
+              <a href="2020iros-mechanismdesign-workshop.html">IROS 2020</a>
+              <!--<a href="mechanismdesign-2020icra-workshop.html">ICRA 2020</a>-->
+              <!--<a href="aim2020.html">AIM 2020</a>-->
+              <a href="aim-soft-robot-workshop.html">AIM Soft Robot Workshop 2020</a>
+              <a href="aim-mechatronics-for-infectious-diseases.html">AIM Mechatronics 4 Infectious Diseases Special Session 2020</a>
+              
+              <a href="biorob2020.html">BioRob Workshop 2020</a>
+              <a href="softroboticsworkshop.html">Soft Robot Workshop 2019</a>
+              <a href="https://sites.google.com/view/aim2019-soft">AIM 2019</a>
+              
+            </div>
+          </div>
+          <a href="site/index.html">Wiki</a>
+	</div>
+</nav>
+
+	
+<div class="content clearfix">
+	
+   <!-- starting page content-->
+  <aside class="researchaside">
+		<ul class="navigation">
+      <a href="research.html">Research</a></li>
+      <a href="shoulder-exoskeleton.html">Shoulder Exoskeleton</a></li>
+      <a href="softwearablerobot.html">Wearable Robot</a></li>
+      <a href="softrobot.html">Soft Robot</a></li>
+		  <id="curr" ><a href="surgicalrobot.html">Surgical Robot</a></li >
+      <a href="humanoidrobot.html">Humanoid Robot and Computer Vision</a></li>
+      <a href="learning.html">Reinforcement Learning</a></li>
+      <a href="sensoractuators.html">Sensors and Actuators</a></li>
+      <a href="facilities.html">Facilities</a></li>
+      <a href="funding.html">Funding</a></li>
+		</ul>
+		
+    </aside>
+
+    <article class="research-detail">
+      <h1>Hip Exoskeleton</h1>
+	    <p>
+	     We created our most lightweight portable shoulder exoskeleton that provide high torque assistance and are suitable for for heterogeneous users with different levels of impairments.
+	    </p>
+      <img src="img/research/shoulder exo-overiew and hardware.jpg" alt="Figure 1">
+
+      <h3>Hardware Features</h3>
+	    <p>
+	     Our shoulder exoskeleton assists 2 DoF movements (flexion/extension, abduction/adduction) while most robots are either passive or only provide 1 DOF assistance; 
+	    </p>
+	    <p>
+	     Thanks to our high torque density motor and compact electronics design, our shoulder exoskeleton is fully portable and modular and can be used for bilateral or unilateral assistance (e.g., stroke is hemiparesis and requires unilateral assistance);  
+	    </p>
+      <div class="slider">
+          <img src="img/research/shoulder exo benefits.svg" alt="Figure 2">
+          <img src="img/research/Shoulder exo electronics.png" alt="Figure 3">
+        <!-- Add more images as needed -->
+      </div>
+
+      <h3>Scenarios</h3>
+      <img src="img/research/shoulder exo scenarios_home.jpg" alt="Subplot Figure 1" style="width:25%;">
+      <img src="img/research/shoulder exo scenarios_retail store.png" alt="Subplot Figure 2" style="width:25%;">
+      <img src="img/research/shoulder exo scenarios_supermarket.JPG" alt="Subplot Figure 3" style="width:25%;">
+      <img src="img/research/shoulder exo scenarios_plant.png" alt="Subplot Figure 4" style="width:25%;">
+
+      <h3>Users' Feedback</h3>
+	    <p> <iframe width="700" height="350" src="https://www.youtube.com/embed/tQArI1hF5QI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> </p>
+     
+      <h3>Data Sheet</h3>
+      <!-- Add table with your data -->
+      <table>
+        <!-- Table rows -->
+      </table>
+
+      <h3>Coming Soon</h3>
+	    <p>
+		    We will develop multi-language cross-platform software that can be utilized on tablets and cell phones with a graphic interface, including a user panel for intuitive control and an expert panel for analysis and remote control. 
+	    </p>
+      <img src="img/research/shoulder exo_crossplatfrom app and GUI.png" alt="Figure 3">
+    </article>
+  </div>
+	
+  <footer>
+	<div class="view2">
+
+	  <a href="https://www.ncsu.edu/"><img class="ncsulogo" src="img/ncsulogo.jpg" alt=""></a>
+	  <div class="footright"> 
+		
+		<div class="social-media-logos">
+		  <a href="github.com"><img id="a001githubsign" src="img/001-github-sign.png" alt=""></a>
+		  <a href="#"><img id="a002facebook" src="img/002-facebook.png" alt=""></a>
+		  <a href="https://www.linkedin.com/in/haosu/"><img id="a003linkedin" src="img/003-linkedin.png" alt=""></a>
+		  <a href="https://www.youtube.com/channel/UCShwLrsSKbwlhoFhTd6KGRg?view_as=subscriber"><img id="a004youtube" src="img/004-youtube.png" alt=""></a>
+		  <a href="https://twitter.com/ProfHaoSu"><img id="a005twitter" src="img/005-twitter.png" alt=""></a>
+		</div>
+		<div class="address">Engineering Building III (EB3) 3282<br>North Carolina State University<br>Raleigh, NC 27695</div>
+<!--         <div class="wikibox">
+			  <p>wiki entrance</p>
+		</div>-->
+	  </div>
+	 </div>
+  </footer>
+
+
+
+</body>
+</html>
