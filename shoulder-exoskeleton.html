@@ -10,6 +10,37 @@
   <meta name="keywords" content="">
 
   <link rel="stylesheet" href="css/styles.css">
+  <style>
+    .slider {
+      width: 100%;
+      height: 300px;
+      overflow: hidden;
+    }
+
+    .slider img {
+      width: 100%;
+      height: auto;
+      display: none;
+    }
+
+    .slider img.active {
+      display: block;
+    }
+  </style>
+  <!-- JavaScript for the image slider -->
+  <script>
+    window.onload = function () {
+      var slides = document.querySelectorAll('.slider img');
+      var currentSlide = 0;
+      slides[currentSlide].classList.add('active');
+
+      setInterval(function () {
+        slides[currentSlide].classList.remove('active');
+        currentSlide = (currentSlide+1)%slides.length;
+        slides[currentSlide].classList.add('active');
+      }, 2000); // Change image every 2 seconds
+    };
+  </script>
 </head>
 
 <body>
@@ -73,141 +104,34 @@
       <a href="funding.html">Funding</a></li>
 		</ul>
 		
-	</aside>
+    </aside>
 
-	<article class="research-detail">
-		
-		   <h3>Shoulder Exoskeleton</h3>
-		           <div class="section-title">
-          <h5><a href="assets/datasheet/Upper Limb Exoskeleton Datasheet.pdf" download>
-            <img src="assets/img/datasheet.png" class="img-fluid" title="Download">Datasheet</a></h5>
-          <h4>Motor Specifications</h4>
-          <h7><table border="1" width="500" height="330"class="text-center ">
-           <caption></caption>
-           <thead>
-             <tr>
-               <th>Property</th>
-               <th>Value</th>
-             </tr>
-           </thead>
-           <tbody>
-           <tr>
-               <td>Motor Used</td>
-               <td><a href="https://haosu-robotics.github.io/site/products/Omni-80-6-Beta/">Omni-80-6-Beta</a></td>
+    <article class="research-detail">
+      <h1>Shoulder Exoskeleton</h1>
+      <img src="PATH_TO_FIGURE1" alt="Figure 1">
 
-             </tr>
-             <tr>
-               <td>Motor Size</td>
-               <td>Ø98 mm x 43 mm</td>
-             </tr>
-             <tr>
-               <td>Motor Nominal Voltage</td>
-               <td>48 V</td>
+      <h2>Hardware Features</h2>
+      <div class="slider">
+        <img src="PATH_TO_FIGURE2" alt="Figure 2">
+        <!-- Add more images as needed -->
+      </div>
 
-             </tr>
-             <tr>
-               <td>Motor Nominal Torque</td>
-               <td>9 Nm</td>
+      <h2>Scenarios</h2>
+      <img src="PATH_TO_SUBPLOT_FIGURE1" alt="Subplot Figure 1" style="width:33%;">
+      <img src="PATH_TO_SUBPLOT_FIGURE2" alt="Subplot Figure 2" style="width:33%;">
+      <img src="PATH_TO_SUBPLOT_FIGURE3" alt="Subplot Figure 3" style="width:33%;">
 
-             </tr>
-             <tr>
-               <td>Motor Nominal Speed</td>
-               <td>165 RPM</td>
+      <h2>Data Sheet</h2>
+      <!-- Add table with your data -->
+      <table>
+        <!-- Table rows -->
+      </table>
 
-             </tr>
-             <tr>
-               <td>Motor Nominal Power</td>
-               <td>240 W</td>
-             </tr>
-             <tr>
-               <td>Motor Max Stall Torque</td>
-               <td>21 Nm</td>
-             </tr>
-             <tr>
-               <td>Motor Weight</td>
-               <td>630 g</td>
-             </tr>
-             <tr>
-               <td>Motor Gear Ratio</td>
-               <td>6:1</td>
-             </tr>
-             <tr>
-               <td>Encoder</td>
-               <td>16-bit magnetic encoder</td>
-             </tr>
-            </tbody>
-        </table></h7>
-        <div/>
-
-        <h4>Actuator Specifications</h4>
-          <h7><table border="1" width="500" height="300"class="text-center ">
-           <caption></caption>
-           <thead>
-             <tr>
-               <th>Property</th>
-               <th>Design</th>
-               <th>Ratio</th>
-             </tr>
-           </thead>
-           <tbody>
-           <tr>
-               <td>Shoulder Torque</td>
-               <td>12 Nm</td>
-               <td>36 : 1</td>
-
-             </tr>
-             <tr>
-               <td>Shoulder Motion</td>
-               <td>-30-170°</td>
-               <td></td>
-             </tr>
-             <tr>
-               <td>Elbow Torque</td>
-               <td>2 Nm</td>
-               <td>6 :1</td>
-
-             </tr>
-             <tr>
-               <td>Elbow Motion</td>
-               <td>30-180°</td>
-               <td></td>
-
-             </tr>
-             <tr>
-               <td>Wrist Torque</td>
-               <td>0.33 Nm</td>
-               <td>1 : 1</td>
-
-             </tr>
-             <tr>
-               <td>Wrist Motion</td>
-               <td>-80-80°</td>
-               <td></td>
-             </tr>
-             <tr>
-               <td>Angular Speed</td>
-               <td>> 15 rad/s</td>
-               <td></td>
-             </tr>
-             <tr>
-               <td>Backdriving Torque</td>
-               <td>< 10 %</td>
-               <td></td>
-             </tr>
-             <tr>
-               <td>Weight (5 actuators)</td>
-               <td>1.2 Kg</td>
-               <td></td>
-             </tr>
-
-            </tbody>
-        </table></h7>
-        <div/>
-
-	</article>
-	
+      <h2>Coming Soon</h2>
+      <img src="PATH_TO_FIGURE3" alt="Figure 3">
+    </article>
   </div>
-
+	
   <footer>
 	<div class="view2">
 
