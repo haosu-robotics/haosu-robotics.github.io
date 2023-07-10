@@ -369,6 +369,15 @@ img.img-fluid {
   height: auto;
 }
 
+img.img-inline {
+  max-height: 0.9em;
+  width: auto;
+  vertical-align:bottom;
+  /* position: absolute; */
+  /* object-fit: contain; */
+  /* display: block; */
+}
+
 table {
   border-collapse: collapse;
   /* margin: auto; */
@@ -382,3 +391,6 @@ table {
 .text-center {
   text-align: center!important;
 }
+
+.product {margin-top: 40px; float: right; width: 75%; box-sizing: border-box; position: relative;}
+.product {margin-bottom: 40px;}
