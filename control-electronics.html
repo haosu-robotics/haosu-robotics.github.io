@@ -1,0 +1,197 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <link rel="shortcut icon" type="image/png" href="https://logoforbrowser.png">
+  <meta charset="utf-8">
+
+  <title>Biomechatronics and Intelligent Robotics</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    .slider {
+      width: 100%;
+      height: 300px;
+      overflow: hidden;
+    }
+
+    .slider img {
+      width: 100%;
+      height: auto;
+      display: none;
+    }
+
+    .slider img.active {
+      display: block;
+    }
+  </style>
+  <!-- JavaScript for the image slider -->
+  <script>
+    window.onload = function () {
+      var slides = document.querySelectorAll('.slider img');
+      var currentSlide = 0;
+      slides[currentSlide].classList.add('active');
+
+      setInterval(function () {
+        slides[currentSlide].classList.remove('active');
+        currentSlide = (currentSlide+1)%slides.length;
+        slides[currentSlide].classList.add('active');
+      }, 2000); // Change image every 2 seconds
+    };
+  </script>
+</head>
+
+<body>
+	
+<header>
+  <div class="view1">
+	<a href="index.html">
+		<img id="logo" src="img/Logo_Simple.png" alt="">  
+	</a>
+		<div id="labname">          
+      Biomechatronics and Intelligent Robotics Lab        
+		</div> 
+    
+  </div>
+</header>
+
+<nav>
+	<div class="navitems">
+          <span><a href="index.html" >Home</a></span> 
+          <span><a href="research.html"><b>Research</b></a></span> 
+          <span><a href="people.html">People</a></span> 
+          <span><a href="publications.html">Publications</a></span> 
+          <span><a href="news.html">News</a></span>
+          <span><a href="joining.html">Opportunity</a></span>
+          <span><a href="https://assistiverobotcenter.github.io">Assistive Robot Center</a></span>
+          <div class="dropdown">
+            <a href="#" class="dropbtn">Workshop</a>
+            <div class="dropdown-content">
+                <a href="2021iros-workshop.html">IROS 2021</a>
+              <a href="2020iros-mechanismdesign-workshop.html">IROS 2020</a>
+              <!--<a href="mechanismdesign-2020icra-workshop.html">ICRA 2020</a>-->
+              <!--<a href="aim2020.html">AIM 2020</a>-->
+              <a href="aim-soft-robot-workshop.html">AIM Soft Robot Workshop 2020</a>
+              <a href="aim-mechatronics-for-infectious-diseases.html">AIM Mechatronics 4 Infectious Diseases Special Session 2020</a>
+              
+              <a href="biorob2020.html">BioRob Workshop 2020</a>
+              <a href="softroboticsworkshop.html">Soft Robot Workshop 2019</a>
+              <a href="https://sites.google.com/view/aim2019-soft">AIM 2019</a>
+              
+            </div>
+          </div>
+          <a href="site/index.html">Wiki</a>
+	</div>
+</nav>
+
+	
+<div class="content clearfix">
+	
+   <!-- starting page content-->
+  <aside class="researchaside">
+		<ul class="navigation">
+      <a href="research.html">Research</a></li>
+      <a href="wearable-robots.html">Wearable Robot</a></li>
+      <a href="softrobot.html">Soft Robot</a></li>
+		  <id="curr" ><a href="surgicalrobot.html">Surgical Robot</a></li >
+      <a href="humanoidrobot.html">Humanoid Robot and Computer Vision</a></li>
+      <a href="learning.html">Reinforcement Learning</a></li>
+      <a href="sensoractuators.html">Sensors and Actuators</a></li>
+      <a href="facilities.html">Facilities</a></li>
+      <a href="funding.html">Funding</a></li>
+		</ul>
+		
+    </aside>
+
+    <article class="research-detail">
+      
+           <h2>Compact and Efficient Control Electronics for Portable Robots</h2>
+           <div class="section-title">
+            <h4>Benefits/Advantages</h4>
+            <h7><table border="1" width="750" height="450" class="text-center text-danger">
+           <caption></caption>
+           <thead>
+             <tr>
+               <th>Property</th>
+               <th>Value</th>
+             </tr>
+           </thead>
+           <tbody>
+           <tr>
+               <td>Lightweight</td>
+               <td>Unilateral exoskeleton weight only 1 kg</td>
+
+             </tr>
+             <tr>
+               <td>High Torque Density Motor</td>
+               <td>7.0 Nm/kg, 4 times for other available devices</td>
+             </tr>
+             <tr>
+               <td>Effective Assistance</td>
+               <td>Nominal torque is 48 or 64 Nm, can provide more than 50% torque assist for walking and reduce 75% muscle activities for squatting</td>
+
+             </tr>
+             <tr>
+               <td>High Bandwidth</td>
+               <td>65 Hz, walking and running are super stable</td>
+
+             </tr>
+
+             <tr>
+               <td>High Backdrivability</td>
+               <td>0.9 Nm, almost no mechanical resistance is felt</td>
+
+             </tr>
+             <tr>
+               <td>High Stiffness</td>
+               <td>15 ms</td>
+
+             </tr>
+             <tr>
+               <td>Interface Type</td>
+               <td>>350 Nm/rad, more than average stiffness value of normal walking 260 Nm/rad</td>
+
+             </tr>
+             <tr>
+               <td>High Accuracy</td>
+               <td>Tracking error < 3%</td>
+
+             </tr>
+           </tbody>
+        </table></h7>
+          </div>
+           <h4>Control Architecture</h4>
+           <img src="images/Control Architecture.png" class="img-responsive center-block">
+           <img src="images/Lightweight_Knee_Exoskeleton_Portable_Exoskeleton Architecture (Teensy 3.6).png" class="img-responsive center-block">
+         </div>
+
+    </article>
+  </div>
+	
+  <footer>
+	<div class="view2">
+
+	  <a href="https://www.ncsu.edu/"><img class="ncsulogo" src="img/ncsulogo.jpg" alt=""></a>
+	  <div class="footright"> 
+		
+		<div class="social-media-logos">
+		  <a href="github.com"><img id="a001githubsign" src="img/001-github-sign.png" alt=""></a>
+		  <a href="#"><img id="a002facebook" src="img/002-facebook.png" alt=""></a>
+		  <a href="https://www.linkedin.com/in/haosu/"><img id="a003linkedin" src="img/003-linkedin.png" alt=""></a>
+		  <a href="https://www.youtube.com/channel/UCShwLrsSKbwlhoFhTd6KGRg?view_as=subscriber"><img id="a004youtube" src="img/004-youtube.png" alt=""></a>
+		  <a href="https://twitter.com/ProfHaoSu"><img id="a005twitter" src="img/005-twitter.png" alt=""></a>
+		</div>
+		<div class="address">Engineering Building III (EB3) 3282<br>North Carolina State University<br>Raleigh, NC 27695</div>
+<!--         <div class="wikibox">
+			  <p>wiki entrance</p>
+		</div>-->
+	  </div>
+	 </div>
+  </footer>
+
+
+
+</body>
+</html>

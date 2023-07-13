@@ -149,7 +149,7 @@ nav {
 
 /*research page*/
 .researchaside {
-	width: 25%; float: left; margin: 40px 50px 0 0; box-sizing: border-box;
+	width: 20%; float: left; margin: 40px 50px 0 0; box-sizing: border-box;
 }
 
 .navigation {
@@ -163,7 +163,7 @@ li {list-style: decimal; list-style-position: inside; line-height: 15px; border-
 .navigation #curr {background-color: #A2CFC9;}
 .navigation #curr a {color:#FFFFFF;}
 
-.research-detail {margin-top: 40px; float: right; width: 70%; box-sizing: border-box; position: relative;}
+.research-detail {margin-top: 40px; float: right; width: 75%; box-sizing: border-box; position: relative;}
 .research-detail {margin-bottom: 40px;}
 .research-detail h3 {padding-bottom: 10px;}
 .research-detail h3 a {color: inherit;}
@@ -205,6 +205,7 @@ footer {
  
  .cunylogo {width:150px; margin-top: 40px;}
  .ncsulogo {width:150px; margin-top: 40px;}
+ .ncsu_unclogo {width:500px; height: auto; margin-top: 40px;}
 
  .footright {
 	width: 30%;
@@ -363,3 +364,34 @@ td#test {
   text-align: center;
   color: red;
 }
+
+img.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+img.img-inline {
+  max-height: 0.9em;
+  width: auto;
+  vertical-align:bottom;
+  /* position: absolute; */
+  /* object-fit: contain; */
+  /* display: block; */
+}
+
+table {
+  border-collapse: collapse;
+  /* margin: auto; */
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 1px;
+  border-right-width: 1px;
+  border-spacing: 2px;
+}
+
+.text-center {
+  text-align: center!important;
+}
+
+.product {margin-top: 40px; float: right; width: 75%; box-sizing: border-box; position: relative;}
+.product {margin-bottom: 40px;}

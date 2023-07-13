@@ -1,0 +1,254 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <link rel="shortcut icon" type="image/png" href="https://logoforbrowser.png">
+  <meta charset="utf-8">
+
+  <title>Biomechatronics and Intelligent Robotics</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    .slider {
+      width: 100%;
+      height: 300px;
+      overflow: hidden;
+    }
+
+    .slider img {
+      width: 100%;
+      height: auto;
+      display: none;
+    }
+
+    .slider img.active {
+      display: block;
+    }
+    .small-image {
+      width: 20%;
+      height: auto;
+    }
+  </style>
+  <!-- JavaScript for the image slider -->
+  <script>
+    window.onload = function () {
+      var slides = document.querySelectorAll('.slider img');
+      var currentSlide = 0;
+      slides[currentSlide].classList.add('active');
+
+      setInterval(function () {
+        slides[currentSlide].classList.remove('active');
+        currentSlide = (currentSlide+1)%slides.length;
+        slides[currentSlide].classList.add('active');
+      }, 2000); // Change image every 2 seconds
+    };
+  </script>
+</head>
+
+<body>
+	
+<header>
+  <div class="view1">
+	<a href="index.html">
+		<img id="logo" src="img/Logo_Simple.png" alt="">  
+	</a>
+		<div id="labname">          
+      Biomechatronics and Intelligent Robotics Lab        
+		</div> 
+    
+  </div>
+</header>
+
+<nav>
+	<div class="navitems">
+          <span><a href="index.html" >Home</a></span> 
+          <span><a href="research.html"><b>Research</b></a></span> 
+          <span><a href="people.html">People</a></span> 
+          <span><a href="publications.html">Publications</a></span> 
+          <span><a href="news.html">News</a></span>
+          <span><a href="joining.html">Opportunity</a></span>
+          <span><a href="https://assistiverobotcenter.github.io">Assistive Robot Center</a></span>
+          <div class="dropdown">
+            <a href="#" class="dropbtn">Workshop</a>
+            <div class="dropdown-content">
+                <a href="2021iros-workshop.html">IROS 2021</a>
+              <a href="2020iros-mechanismdesign-workshop.html">IROS 2020</a>
+              <!--<a href="mechanismdesign-2020icra-workshop.html">ICRA 2020</a>-->
+              <!--<a href="aim2020.html">AIM 2020</a>-->
+              <a href="aim-soft-robot-workshop.html">AIM Soft Robot Workshop 2020</a>
+              <a href="aim-mechatronics-for-infectious-diseases.html">AIM Mechatronics 4 Infectious Diseases Special Session 2020</a>
+              
+              <a href="biorob2020.html">BioRob Workshop 2020</a>
+              <a href="softroboticsworkshop.html">Soft Robot Workshop 2019</a>
+              <a href="https://sites.google.com/view/aim2019-soft">AIM 2019</a>
+              
+            </div>
+          </div>
+          <a href="site/index.html">Wiki</a>
+	</div>
+</nav>
+
+	
+<div class="content clearfix">
+	
+   <!-- starting page content-->
+  <aside class="researchaside">
+		<ul class="navigation">
+      <a href="research.html">Research</a></li>
+      <a href="hip-exoskeleton.html">Hip Exoskeleton</a></li>		
+      <a href="wearable robots.html">Wearable Robot</a></li>
+      <a href="softrobot.html">Soft Robot</a></li>
+		  <id="curr" ><a href="surgicalrobot.html">Surgical Robot</a></li >
+      <a href="humanoidrobot.html">Humanoid Robot and Computer Vision</a></li>
+      <a href="learning.html">Reinforcement Learning</a></li>
+      <a href="sensoractuators.html">Sensors and Actuators</a></li>
+      <a href="facilities.html">Facilities</a></li>
+      <a href="funding.html">Funding</a></li>
+		</ul>
+		
+    </aside>
+
+    <article class="research-detail">
+      <h1>Portable High Torque Hip Exoskeleton</h1>
+	    <p>
+	     Our design of quasi-direct drive actuation-based exoskeleton demonstrates mechanical versatility for being lightweight (3.2 kg overall mass), compliant (backdrivable) with high torque (36 Nm) and high control bandwidth.
+	    </p>
+      <img src="images/hip exo v2.png" alt="Figure 1" class="small-image">
+
+      <h3>Specifications</h3>
+	          <!-- Add table with your data -->
+     <h7><table border="1" width="500" height="420" class="text-center ">
+             <caption></caption>
+                <thead>
+                  <tr>
+                    <th>Property</th>
+                    <th>Value</th>
+                  </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Total Mass </td>
+                    <td>	3.2 kg</td>
+
+                  </tr>
+			
+                  <tr>
+                    <td>Portability</td>
+                    <td>Fully Portable</td>
+     
+                  </tr>
+                  <tr>
+                    <td>Voltage</td>
+                    <td>	24 V</td>
+     
+                  </tr>
+                  <tr>
+                    <td>Rated Torque</td>
+                    <td>	12 Nm</td>
+     
+                  </tr>
+                  <tr>
+                    <td>Peak Torque</td>
+                    <td>36 Nm</td>
+     
+                  </tr>
+                  <tr>
+                    <td>Gear Ratio</td>
+                    <td>9:1</td>
+     
+                  </tr>
+                  <tr>
+                    <td>Flexion/Extension<br>Abduction/Adduction</td>
+                    <td>	130°/40°<br>90°/60°</b></td>
+     
+                  </tr>
+                  <tr>
+                    <td>Battery Life</td>
+                    <td>1.5 hours</td>
+     
+                  </tr>		
+                </tbody>
+             </table></h7>
+
+             <br>
+	    
+
+      <h3>Architecture of Sensor, Communication, Control</h3>
+      <p>
+	     The electronic architecture of the exoskeleton facilitated high-level torque control, motor control, sensor signal conditioning, data communication, and power management.
+	    </p>
+	    <img src="images/robots/Hip exo control.png" alt="Figure 1">
+	    
+       <div class="section-title">
+          <h4>Video 2023 ICRA</h4>
+           <iframe width="700" height="350"
+           src="https://www.youtube.com/embed/RMi3zxaVKw4">
+           </iframe>
+
+	<h4>Video 2020 Transactions on Mechatronics</h4>
+           <iframe width="700" height="350"
+           src="https://www.youtube.com/embed/umcgkF4M8fk">
+           </iframe>
+	
+      </div>
+        <div class="project-detail">
+          <h4>Publication</h4>
+          <li>S. Yu, T.H Huang, X. Yang, C. Jiao, J. Yang, Y. Chen, J. Yi, H. Su. "Quasi-Direct Drive Actuation for a
+            Lightweight Hip Exoskeleton with High Backdrivability and High Bandwidth", IEEE/ASME Transactions on
+            Mechatronics. vol. 25, no. 4, pp. 1794-1802, Aug. 2020. <strong>
+              <font color="#32CD32">(ASME Mechatronics TC 2020 Best Student Paper)</font>
+            </strong>
+            <strong>
+              <font color="#819FF7">
+                <a href="PDFs/2020 Quasi-Direct_Drive_Actuation_for_a_Lightweight_Hip_Exoskeleton_With_High_Backdrivability_and_High_Bandwidth.pdf">PDF</a>
+                <a href="https://www.youtube.com/watch?v=TItov5U1mqI">| Presentation Video</a>
+                <a href="https://www.youtube.com/watch?v=KdWG6QO_0l8">| Short Demo Video</a>
+                <a href="img/Paper/QDD Zhangting Samsung comparison.zip">| Code</a>
+                <a href="img/award/Mechatronics TC AIM Best Student Paper_Yu.pdf">| Award</a>
+              </font>
+            </strong>
+          </li><br>
+
+		<li>I. Dominguez, S. Luo, R. Wu, H. Su, “Reinforcement Learning through Physics-based and Data-driven Approaches for 
+                Exoskeleton Control in the Real World” 2023 IEEE International Conference on Robotics and Automation (ICRA), Workshop: Neuromechanics Meets Deep Learning,
+                 London, UK. 
+
+              <strong>
+                <font color="#819FF7"><a
+                    href="PDFs/2023_ICRA_RL_Abstract.pdf">PDF</a><a
+                    href="PDFs/2023_ICRA_RL_Poster.pdf"> | Poster</a></font>
+              </strong>
+            </li><br>
+
+        </div>
+
+    </article>
+  </div>
+	
+  <footer>
+	<div class="view2">
+
+	  <a href="https://www.ncsu.edu/"><img class="ncsulogo" src="img/ncsulogo.jpg" alt=""></a>
+	  <div class="footright"> 
+		
+		<div class="social-media-logos">
+		  <a href="github.com"><img id="a001githubsign" src="img/001-github-sign.png" alt=""></a>
+		  <a href="#"><img id="a002facebook" src="img/002-facebook.png" alt=""></a>
+		  <a href="https://www.linkedin.com/in/haosu/"><img id="a003linkedin" src="img/003-linkedin.png" alt=""></a>
+		  <a href="https://www.youtube.com/channel/UCShwLrsSKbwlhoFhTd6KGRg?view_as=subscriber"><img id="a004youtube" src="img/004-youtube.png" alt=""></a>
+		  <a href="https://twitter.com/ProfHaoSu"><img id="a005twitter" src="img/005-twitter.png" alt=""></a>
+		</div>
+		<div class="address">Engineering Building III (EB3) 3282<br>North Carolina State University<br>Raleigh, NC 27695</div>
+<!--         <div class="wikibox">
+			  <p>wiki entrance</p>
+		</div>-->
+	  </div>
+	 </div>
+  </footer>
+
+
+
+</body>
+</html>
