@@ -1,24 +1,4 @@
-			<div class="personfile ">
-				<p><img class="profileimg" src="images/yanbin.jpg" alt="">
-				<a> 
-                                <!--href="mailto:tliu32@ncsu.edu"  -->
-						Yanbin Li</a>
-				</p>
-				<p>PhD, NC State University</p>
-				<p>Postdoc Fellow</p>
-				<p>(Co-advised with Dr. Jie Yin)</p>
-			</div>
 
-			<div class="personfile ">
-				<p><img class="profileimg" src="images/yaozhao.jpg" alt="">
-					<a>
-<!-- 						href="mailto:tliu32@ncsu.edu"> -->
-						Yao Zhao</a>
-				</p>
-				<p>PhD, Temple University</p>
-				<p>Postdoc Fellow</p>
-				<p>(Co-advised with Dr. Jie Yin)</p>
-			</div>
 <!-- 
                        <!--
 			<div class="personfile">
