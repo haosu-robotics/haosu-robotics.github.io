@@ -1,0 +1,91 @@
+			<div class="personfile ">
+				<p><img class="profileimg" src="images/yanbin.jpg" alt="">
+				<a> 
+                                <!--href="mailto:tliu32@ncsu.edu"  -->
+						Yanbin Li</a>
+				</p>
+				<p>PhD, NC State University</p>
+				<p>Postdoc Fellow</p>
+				<p>(Co-advised with Dr. Jie Yin)</p>
+			</div>
+
+			<div class="personfile ">
+				<p><img class="profileimg" src="images/yaozhao.jpg" alt="">
+					<a>
+<!-- 						href="mailto:tliu32@ncsu.edu"> -->
+						Yao Zhao</a>
+				</p>
+				<p>PhD, Temple University</p>
+				<p>Postdoc Fellow</p>
+				<p>(Co-advised with Dr. Jie Yin)</p>
+			</div>
+<!-- 
+                       <!--
+			<div class="personfile">
+				<p><img class="profileimg" src="images/saurav.png" alt="">
+					<a href="mailto:skumar46@ncsu.edu">Saurav Kumar</a>
+				</p>
+				<p>PhD, The University of</p>
+				<p>PhD, Texas at Dallas</p>
+				<p>Postdoc Fellow</p>
+			</div>
+			<div class="personfile">
+				<p><img class="profileimg" src="images/Sunil-Kumar-Rajendran_picture.jpg" alt="">
+					<a href="mailto:srajend5@ncsu.edu">Sunil Kumar Rajendran </a>
+				</p>
+				<p>PhD, George Mason</p>
+				<p>PhD, University</p>
+				<p>Postdoc Fellow</p>
+			</div>
+
+			<div class="personfile ">
+				<p><img class="profileimg" src="img/Shuzhen Luo.png" alt="">
+					<a href="mailto:luoshuzhen5089@gmail.com">Shuzhen Luo</a>
+				</p>
+				<p>PhD, NJIT</p>
+				<p>Postdoc Fellow</p>
+			</div>
+			-->
+			<!-- <div class="personfile ">
+			<p><img class="profileimg" src="img/mark price UMass Ahmerst.png" alt="">
+			  <a href="mailto:markprice138@gmail.com">Mark Price</a></p>
+			<p>PhD, UMass Amherst</p>
+			<p>Postdoc Fellow</p>
+		  </div> -->
+			<!-- <div class="personfile ">
+			<p><img class="profileimg" src="img/Thassyo Pinto.png" alt="">
+			  <a href="mailto:thassyo@ieee.org">Thassyo Pinto</a></p>
+			<p>PhD, Michigan State Univ.</p>
+			<p>Postdoc Fellow</p>
+		  </div> -->
+			<!-- <div class="personfile ">
+			<p><img class="profileimg" src="img/Mhairi MacLean.jpg" alt="">
+			  <a href="mailto:raiotkat@gmail.com">Mhairi MacLean</a></p>
+			<p>PhD, University of Florida</p>
+			<p>Postdoc Fellow</p>
+		  </div> -->
+			<!-- <div class="personfile">
+			<p><img class="profileimg" src="img/Thassyo Pinto.png" alt="">
+			  <a href="mailto:mailto:thassyo@ieee.org">Thassyo Pinto</a></p>
+			<p>PhD, Michigan State University</p>
+			<p>Postdoc Fellow</p>
+		  </div> -->
+
+			<!-- <div class="personfile clearfix">
+		  <p><img class="profileimg" src="img/Xiaolong Yang.jpg" alt="">
+			<a href="mailto:xyang1@ccny.cuny.edu">Xiaolong Yang</a></p>
+          <p>PhD, NUAA</p>
+		</div> -->
+			<!--<div class="personfile">
+		  <p><img class="profileimg" src="img/Jianfu Yang.jpg" alt="">
+			<a href="mailto:jy2863@columbia.edu">Jianfu Yang</a></p>
+		  <p>M.S., Columbia University<br>
+	      </p>
+	  </div>-->
+			<!--<div class="personfile">
+		  <p><img class="profileimg" src="img/YuxinFu.jpg" alt="">Yuxin Fu</p>
+		  <p>M.S., Columbia University<br>
+	      </p>
+	  </div>-->
+			<!--<div class="personfile clearfix"><img class="profileimg" src="img/CAT.jpg" alt=""> Mascot </div>-->
+		</div> -->
