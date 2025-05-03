@@ -11,36 +11,9 @@
 
   <link rel="stylesheet" href="css/styles.css">
   <style>
-    .slider {
-      width: 100%;
-      height: 300px;
-      overflow: hidden;
-    }
-
-    .slider img {
-      width: 100%;
-      height: auto;
-      display: none;
-    }
-
-    .slider img.active {
-      display: block;
-    }
+    .w3cschool{text-align:center} 
   </style>
-  <!-- JavaScript for the image slider -->
-  <script>
-    window.onload = function () {
-      var slides = document.querySelectorAll('.slider img');
-      var currentSlide = 0;
-      slides[currentSlide].classList.add('active');
-
-      setInterval(function () {
-        slides[currentSlide].classList.remove('active');
-        currentSlide = (currentSlide+1)%slides.length;
-        slides[currentSlide].classList.add('active');
-      }, 2000); // Change image every 2 seconds
-    };
-  </script>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 
 <body>
@@ -57,7 +30,15 @@
   </div>
 </header>
 
-<nav>
+<div id="nav-placeholder">
+  
+</div>
+<script>
+  $(function(){
+    $("#nav-placeholder").load("navbar.html");
+  });
+  </script>
+<!-- <nav>
 	<div class="navitems">
           <span><a href="index.html" >Home</a></span> 
           <span><a href="research.html"><b>Research</b></a></span> 
@@ -71,8 +52,8 @@
             <div class="dropdown-content">
                 <a href="2021iros-workshop.html">IROS 2021</a>
               <a href="2020iros-mechanismdesign-workshop.html">IROS 2020</a>
-              <!--<a href="mechanismdesign-2020icra-workshop.html">ICRA 2020</a>-->
-              <!--<a href="aim2020.html">AIM 2020</a>-->
+              <a href="mechanismdesign-2020icra-workshop.html">ICRA 2020</a>
+              <a href="aim2020.html">AIM 2020</a>
               <a href="aim-soft-robot-workshop.html">AIM Soft Robot Workshop 2020</a>
               <a href="aim-mechatronics-for-infectious-diseases.html">AIM Mechatronics 4 Infectious Diseases Special Session 2020</a>
               
@@ -84,18 +65,27 @@
           </div>
           <a href="site/index.html">Wiki</a>
 	</div>
-</nav>
+</nav> -->
 
 	
 <div class="content clearfix">
 	
    <!-- starting page content-->
-  <aside class="researchaside">
+   <div id="navpanel_side-placeholder">
+  
+   </div>
+   <script>
+     $(function(){
+       $("#navpanel_side-placeholder").load("navpanel_side.html");
+     });
+     </script>
+  <!-- <aside class="researchaside">
 		<ul class="navigation">
       <a href="research.html">Research</a></li>
-      <a href="wearable-robots.html">Wearable Robot</a></li>
-      <a href="softrobot.html">Soft Robot</a></li>
-		  <id="curr" ><a href="surgicalrobot.html">Surgical Robot</a></li >
+	<a href="shoulder-exoskeleton.html">Shoulder Exoskeleton</a></li>
+      <id="curr" ><a href="wearable-robots.html">Wearable Robots</a></li>
+      <a href="soft-robots.html">Soft Robots</a></li>
+		  <a href="surgicalrobot.html">Surgical Robot</a></li>
       <a href="humanoidrobot.html">Humanoid Robot and Computer Vision</a></li>
       <a href="learning.html">Reinforcement Learning</a></li>
       <a href="sensoractuators.html">Sensors and Actuators</a></li>
@@ -103,7 +93,7 @@
       <a href="funding.html">Funding</a></li>
 		</ul>
 		
-    </aside>
+	</aside> -->
 
     <article class="research-detail">
       

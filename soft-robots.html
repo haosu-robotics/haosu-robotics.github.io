@@ -10,6 +10,10 @@
   <meta name="keywords" content="">
 
   <link rel="stylesheet" href="css/styles.css">
+  <style>
+    .w3cschool{text-align:center} 
+  </style>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 
 <body>
@@ -26,7 +30,15 @@
   </div>
 </header>
 
-<nav>
+<div id="nav-placeholder">
+  
+</div>
+<script>
+  $(function(){
+    $("#nav-placeholder").load("navbar.html");
+  });
+  </script>
+<!-- <nav>
 	<div class="navitems">
           <span><a href="index.html" >Home</a></span> 
           <span><a href="research.html"><b>Research</b></a></span> 
@@ -40,8 +52,8 @@
             <div class="dropdown-content">
                 <a href="2021iros-workshop.html">IROS 2021</a>
               <a href="2020iros-mechanismdesign-workshop.html">IROS 2020</a>
-              <!--<a href="mechanismdesign-2020icra-workshop.html">ICRA 2020</a>-->
-              <!--<a href="aim2020.html">AIM 2020</a>-->
+              <a href="mechanismdesign-2020icra-workshop.html">ICRA 2020</a>
+              <a href="aim2020.html">AIM 2020</a>
               <a href="aim-soft-robot-workshop.html">AIM Soft Robot Workshop 2020</a>
               <a href="aim-mechatronics-for-infectious-diseases.html">AIM Mechatronics 4 Infectious Diseases Special Session 2020</a>
               
@@ -53,18 +65,26 @@
           </div>
           <a href="site/index.html">Wiki</a>
 	</div>
-</nav>
+</nav> -->
 
 	
 <div class="content clearfix">
 	
    <!-- starting page content-->
-  <aside class="researchaside">
+   <div id="navpanel_side-placeholder">
+  
+   </div>
+   <script>
+     $(function(){
+       $("#navpanel_side-placeholder").load("navpanel_side.html");
+     });
+     </script>
+  <!-- <aside class="researchaside">
 		<ul class="navigation">
       <a href="research.html">Research</a></li>
-      <a href="shoulder-exoskeleton.html">Shoulder Exoskeleton</a></li>
-      <a href="softwearablerobot.html">Wearable Robot</a></li>
-      <id="curr" ><a href="softrobot.html">Soft Robot</a></li>
+	<a href="shoulder-exoskeleton.html">Shoulder Exoskeleton</a></li>
+      <id="curr" ><a href="wearable-robots.html">Wearable Robots</a></li>
+      <a href="soft-robots.html">Soft Robots</a></li>
 		  <a href="surgicalrobot.html">Surgical Robot</a></li>
       <a href="humanoidrobot.html">Humanoid Robot and Computer Vision</a></li>
       <a href="learning.html">Reinforcement Learning</a></li>
@@ -73,7 +93,7 @@
       <a href="funding.html">Funding</a></li>
 		</ul>
 		
-	</aside>
+	</aside> -->
 
 	<article class="research-detail">
 	<h3>Lightweight and Compliant Tethered Cable-driven Actuator: Bidirectional Actuation</h3>
@@ -173,25 +193,42 @@
   </div>
 
   <footer>
-     <div class="view2">
+    <div class="view2">
 
-       <a href="http://www2.cuny.edu/"><img class="cunylogo" src="img/CUNY-LOGO.png" alt=""></a>
-	   <div class="footright"> 
-         
-         <div class="social-media-logos">
-           <a href="github.com"><img id="a001githubsign" src="img/001-github-sign.png" alt=""></a>
-           <a href="#"><img id="a002facebook" src="img/002-facebook.png" alt=""></a>
-           <a href="https://www.linkedin.com/in/haosu/"><img id="a003linkedin" src="img/003-linkedin.png" alt=""></a>
-           <a href="https://www.youtube.com/channel/UCShwLrsSKbwlhoFhTd6KGRg?view_as=subscriber"><img id="a004youtube" src="img/004-youtube.png" alt=""></a>
-           <a href="https://twitter.com/ProfHaoSu"><img id="a005twitter" src="img/005-twitter.png" alt=""></a>
-         </div>
-		 <div class="address">Steinman Hall<br>The City College of New York<br>New York City, NY 10010</div>
-<!--         <div class="wikibox">
+      <a href="https://engineering.nyu.edu/u/"><img class="ncsulogo" src="img/NYU_logo.png" alt=""></a>
+      <div class="footright">
+
+        <div class="social-media-logos">
+          <a href="github.com"><img id="a001githubsign" src="img/001-github-sign.png" alt=""></a>
+          <a href="#"><img id="a002facebook" src="img/002-facebook.png" alt=""></a>
+          <a href="https://www.linkedin.com/in/haosu/"><img id="a003linkedin" src="img/003-linkedin.png" alt=""></a>
+          <a href="https://www.youtube.com/channel/UCShwLrsSKbwlhoFhTd6KGRg?view_as=subscriber"><img id="a004youtube"
+              src="img/004-youtube.png" alt=""></a>
+          <a href="https://twitter.com/ProfHaoSu"><img id="a005twitter" src="img/005-twitter.png" alt=""></a>
+        </div>
+        <div class="address">
+          <!--Marshak Science Building, Room 705 <br>
+160 Convent AveNew York, NY 10031 <br>
+The City College of New York<br>-->
+
+		
+<!--           Room 3001, Engineering Building III (EB3),<br>1840 Entrepreneur Drive<br>North Carolina State University,
+          Raleigh, NC 27695, US -->
+		
+		6 MetroTech Center, Brooklyn, NY 11201<br>
+		New York University
+          <br>
+          <strong>Email</strong> : <a> hao.su at nyu.edu</a>
+          <br>
+          <!-- <strong>Phone</strong> : <a>(212)650-5224</a>
+<br> -->
+        </div>
+        <!--         <div class="wikibox">
                <p>wiki entrance</p>
          </div>-->
-	   </div>
-	  </div>
-   </footer>
+      </div>
+    </div>
+  </footer>
 
 
 

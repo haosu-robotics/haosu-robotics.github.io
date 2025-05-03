@@ -13,6 +13,7 @@
   <style>
     .w3cschool{text-align:center} 
   </style>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 
 <body>
@@ -23,28 +24,36 @@
 		<img id="logo" src="img/Logo_Simple.png" alt="">  
 	</a>
 		<div id="labname">          
-      Biomechatronics and Intelligent Robotics Lab       
+      Biomechatronics and Intelligent Robotics Lab        
 		</div> 
     
   </div>
 </header>
 
-<nav>
+<div id="nav-placeholder">
+  
+</div>
+<script>
+  $(function(){
+    $("#nav-placeholder").load("navbar.html");
+  });
+  </script>
+<!-- <nav>
 	<div class="navitems">
-          <a href="index.html" >Home</a>
-          <a href="research.html"><b>Research</b></a>
-          <a href="people.html">People</a>
-          <a href="publications.html">Publications</a> 
-          <a href="news.html">News</a>
-          <a href="joining.html">Opportunity</a>
-          <a href="https://assistiverobotcenter.github.io">Assistive Robot Center</a>
+          <span><a href="index.html" >Home</a></span> 
+          <span><a href="research.html"><b>Research</b></a></span> 
+          <span><a href="people.html">People</a></span> 
+          <span><a href="publications.html">Publications</a></span> 
+          <span><a href="news.html">News</a></span>
+          <span><a href="joining.html">Opportunity</a></span>
+          <span><a href="https://assistiverobotcenter.github.io">Assistive Robot Center</a></span>
           <div class="dropdown">
             <a href="#" class="dropbtn">Workshop</a>
             <div class="dropdown-content">
                 <a href="2021iros-workshop.html">IROS 2021</a>
               <a href="2020iros-mechanismdesign-workshop.html">IROS 2020</a>
-              <!--<a href="mechanismdesign-2020icra-workshop.html">ICRA 2020</a>-->
-              <!--<a href="aim2020.html">AIM 2020</a>-->
+              <a href="mechanismdesign-2020icra-workshop.html">ICRA 2020</a>
+              <a href="aim2020.html">AIM 2020</a>
               <a href="aim-soft-robot-workshop.html">AIM Soft Robot Workshop 2020</a>
               <a href="aim-mechatronics-for-infectious-diseases.html">AIM Mechatronics 4 Infectious Diseases Special Session 2020</a>
               
@@ -56,37 +65,41 @@
           </div>
           <a href="site/index.html">Wiki</a>
 	</div>
-</nav>
+</nav> -->
 
 	
 <div class="content clearfix">
 	
    <!-- starting page content-->
-  <aside class="researchaside">
+   <div id="navpanel_side-placeholder">
+  
+   </div>
+   <script>
+     $(function(){
+       $("#navpanel_side-placeholder").load("navpanel_side.html");
+     });
+     </script>
+  <!-- <aside class="researchaside">
 		<ul class="navigation">
       <a href="research.html">Research</a></li>
-      <a href="shoulder-exoskeleton.html">Shoulder Exoskeleton</a></li>
-      <a href="softwearablerobot.html">Wearable Robot</a></li>
-      <a href="softrobot.html">Soft Robot</a></li>
+	<a href="shoulder-exoskeleton.html">Shoulder Exoskeleton</a></li>
+      <id="curr" ><a href="wearable-robots.html">Wearable Robots</a></li>
+      <a href="soft-robots.html">Soft Robots</a></li>
 		  <a href="surgicalrobot.html">Surgical Robot</a></li>
       <a href="humanoidrobot.html">Humanoid Robot and Computer Vision</a></li>
       <a href="learning.html">Reinforcement Learning</a></li>
       <a href="sensoractuators.html">Sensors and Actuators</a></li>
-      <id="curr" ><a href="facilities.html">Facilities</a></li>
+      <a href="facilities.html">Facilities</a></li>
       <a href="funding.html">Funding</a></li>
-            
-	</ul>
+		</ul>
 		
-  </aside>
-  <!--<div align="center"></div>
-			<p><img src="img/facility/1.jpg" width="1000" height="450"></p>
-      <br><br>-->
+	</aside> -->
 
 	<article class="research-detail">
-      <h2>Facilities and Equipment</h2>
+      <h2>Our Facilities and Equipment</h2>
       <br>
-      <h3>The Biomechatronics and Intelligent Robotics (BIRO) Lab at the City College of New York (CCNY)</h3>
-			<p align="justify">The CCNY Biomechatronics Laboratory is the lab established by PI Su. It is approximately 1700 sq. ft. suite located on the seventh floor of the Marshak Science Building and the second floor of the Steinman Hall Building on The City College of New York’s campus in Manhattan. It includes 4 office rooms, 1 workspace, and 1 experimental space. It is a facility for biomechanics and wearable robotics research. The lab has been instrumented with a heavy-duty treadmill, mobile motion capture system, mobile insole sensors, and state of the art 3D printers. Several exoskeleton prototypes have been developed for research on rehabilitation, mobility assistance, hand manipulation, and human augmentation, etc.</p>
+<!--       <h3>The Biomechatronics and Intelligent Robotics (BIRO) Lab at the City College of New York (CCNY)</h3> -->
+			<p align="justify">The Biomechatronics Laboratory is the lab established by PI Su. It is an approximately 1700 sq. ft. suite located on the third floor of Engineering Building III in The NC State University Centennial campus in Raleigh, North Carolina. It includes 1 office room and 1 experimental space. It is a facility for biomechanics and wearable robotics research. The lab has been instrumented with a heavy-duty treadmill, mobile motion capture system, mobile insole sensors, and state of the art 3D printers. Several exoskeleton prototypes have been developed for research on rehabilitation, mobility assistance, hand manipulation, and human augmentation, etc.</p>
       <br>
       <h3>Computer</h3>
       <p align="justify">6 DELL desktops; 2 HP desktops; 3 XPS DELL laptops; 1 HP laptops; 5 Lenovo laptops.</p>
@@ -201,25 +214,42 @@
   </div>
 
   <footer>
-     <div class="view2">
+    <div class="view2">
 
-       <a href="http://www2.cuny.edu/"><img class="cunylogo" src="img/CUNY-LOGO.png" alt=""></a>
-	   <div class="footright"> 
-         
-         <div class="social-media-logos">
-           <a href="github.com"><img id="a001githubsign" src="img/001-github-sign.png" alt=""></a>
-           <a href="#"><img id="a002facebook" src="img/002-facebook.png" alt=""></a>
-           <a href="https://www.linkedin.com/in/haosu/"><img id="a003linkedin" src="img/003-linkedin.png" alt=""></a>
-           <a href="https://www.youtube.com/channel/UCShwLrsSKbwlhoFhTd6KGRg?view_as=subscriber"><img id="a004youtube" src="img/004-youtube.png" alt=""></a>
-           <a href="https://twitter.com/ProfHaoSu"><img id="a005twitter" src="img/005-twitter.png" alt=""></a>
-         </div>
-		 <div class="address">Steinman Hall<br>The City College of New York<br>New York City, NY 10010</div>
-<!--         <div class="wikibox">
+      <a href="https://engineering.nyu.edu/u/"><img class="ncsulogo" src="img/NYU_logo.png" alt=""></a>
+      <div class="footright">
+
+        <div class="social-media-logos">
+          <a href="github.com"><img id="a001githubsign" src="img/001-github-sign.png" alt=""></a>
+          <a href="#"><img id="a002facebook" src="img/002-facebook.png" alt=""></a>
+          <a href="https://www.linkedin.com/in/haosu/"><img id="a003linkedin" src="img/003-linkedin.png" alt=""></a>
+          <a href="https://www.youtube.com/channel/UCShwLrsSKbwlhoFhTd6KGRg?view_as=subscriber"><img id="a004youtube"
+              src="img/004-youtube.png" alt=""></a>
+          <a href="https://twitter.com/ProfHaoSu"><img id="a005twitter" src="img/005-twitter.png" alt=""></a>
+        </div>
+        <div class="address">
+          <!--Marshak Science Building, Room 705 <br>
+160 Convent AveNew York, NY 10031 <br>
+The City College of New York<br>-->
+
+		
+<!--           Room 3001, Engineering Building III (EB3),<br>1840 Entrepreneur Drive<br>North Carolina State University,
+          Raleigh, NC 27695, US -->
+		
+		6 MetroTech Center, Brooklyn, NY 11201<br>
+		New York University
+          <br>
+          <strong>Email</strong> : <a> hao.su at nyu.edu</a>
+          <br>
+          <!-- <strong>Phone</strong> : <a>(212)650-5224</a>
+<br> -->
+        </div>
+        <!--         <div class="wikibox">
                <p>wiki entrance</p>
          </div>-->
-	   </div>
-	  </div>
-   </footer>
+      </div>
+    </div>
+  </footer>
 
 
 
